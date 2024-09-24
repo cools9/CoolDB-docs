@@ -6,38 +6,46 @@ description: A Cache database
 
 ## What is it?
 
-Lunar is a Key-Value, Cache, Memory based database that loads keys and values in a file when saved by command, you can load this keys and values by the command "LOAD" then filename.
+[LunarDB](https://github.com/Kazooki123/lunardb) is a Key-Value, Cache, Memory based database that loads keys and values in a file when saved by command, you can load this keys and values by the command "LOAD" then filename.
 
-## Commands
+## Why did I build this?
 
-**Available commands:**
+For months or even years developers or programmers have been searching for the right and perfect
+cache-based memory database.
 
-SET key value [ttl] - Set a key-value pair with optional TTL in seconds.
+The first was Memcache (Which basically means Mememory cache) during the early days of programming.
 
-GET key - Get the value for a key.
+Years and decades later we have Redis, a millisecond fast, cache based in memory but also stores in disk service and database for applications that want a very fast response
+time for costumers. 
 
-DEL key - Delete a key-value pair.
+But Redis today according to **news & article** they went on a new LICENSE change that limits costumers
+to use Redis for commercial use. Which frustrated the developer community and the DX (Developer Experience)
 
-MSET key1 value1 key2 value2 ... - Set multiple key-value pairs
+**LunarDB** on the other hand, fixes this. I decided to build this side-project to give developers
+the database they want. Its free, open source and a enjoyable database as well!
 
-MGET key1 key2 ... - Get multiple values
+**LunarDB** will sooner make a website manager and GUI manager for users in Windows, MacOS & Linux.
 
-KEYS - List all keys
+## Features
 
-CLEAR - Clear all key-value pairs
+**LunarDB has current and upcoming features:**
 
-SIZE - Get the number of key-value pairs
+1. Multi-model database support
+2. API support
+3. SDK supported
+4. Plug-in support
+5. Vscode Extension
+6. GUI manager
+7. SQL support
+8. GraphQL support
+9. Secure hashing
+10. Auth security
 
-CLEANUP - Remove expired entries
+**AGAIN: Most of this are in development and will be announced in the feature for upcoming release!**
 
-SAVE filename - Save the cache to a file
+## SDKs?
 
-LOAD filename - Load the cache from a file
-
-QUIT - Exit the program
-
-## CONTRIBUTIONS:
-Feel free to contribution as it is open for all developers! Just make sure to follow the CONTRIBUTION rules and be respectful.
+Yes! Well... That is still in development😅😅✌🏼
 
 ## LICENSE
 
