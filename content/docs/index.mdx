@@ -1,12 +1,13 @@
 ---
 title: Lunar DB | Home
-description: A Cache database
+description: A cache, memory, key-value store multimodel database.
+icon: HomeIcon
 ---
 
 
 ## What is it?
 
-[LunarDB](https://github.com/Kazooki123/lunardb) is a Key-Value, Cache, Memory based database that loads keys and values in a file when saved by command, you can load this keys and values by the command "LOAD" then filename.
+[LunarDB](https://github.com/TheStarloTeam/lunardb) is a Key-Value, Cache, Memory based database that loads keys and values in a file when saved by command, you can load this keys and values by the command "LOAD" then filename.
 
 ## Why did I build this?
 
@@ -25,6 +26,57 @@ to use Redis for commercial use. Which frustrated the developer community and th
 the database they want. Its free, open source and a enjoyable database as well!
 
 **LunarDB** will sooner make a website manager and GUI manager for users in Windows, MacOS & Linux.
+
+## Examples:
+
+**Run the lunar.exe command by simply typing `./lunar` in your terminal and you should see texts like this:**
+
+```bash
+Welcome to Lunar! A Redis-like cache database!
+___           ___  ___      ________       ________      ________
+|\  \         |\  \|\  \    |\   ___  \    |\   __  \    |\   __  \
+\ \  \        \ \  \\\  \   \ \  \\ \  \   \ \  \|\  \   \ \  \|\  \
+ \ \  \        \ \  \\\  \   \ \  \\ \  \   \ \   __  \   \ \   _  _\
+  \ \  \____    \ \  \\\  \   \ \  \\ \  \   \ \  \ \  \   \ \  \\  \|
+   \ \_______\   \ \_______\   \ \__\\ \__\   \ \__\ \__\   \ \__\\ _\
+    \|_______|    \|_______|    \|__| \|__|    \|__|\|__|    \|__|\|__|
+Available commands:
+SET key value [ttl] - Set a key-value pair with optional TTL in seconds
+GET key - Get the value for a key
+DEL key - Delete a key-value pair
+MSET key1 value1 key2 value2 ... - Set multiple key-value pairs
+MGET key1 key2 ... - Get multiple values
+KEYS - List all keys
+SWITCH - Switches to SCHEMAFULL, SCHEMALESS or SQL (Do not attempt to command this as it's broken)
+CLEAR - Clear all key-value pairs
+SIZE - Get the number of key-value pairs
+CLEANUP - Remove expired entries
+SAVE filename - Save the cache to a file
+LOAD filename - Load the cache from a file
+LPUSH key value - Push an element to the head of the list
+LPOP key - Remove and return an element from the head of the list
+RPUSH key value - Push an element to the tail of the list
+RPOP key - Remove and return an element from the tail of the list
+LRANGE key start stop - Get a range of elements from the list
+LLEN key - Get the length of the list
+QUIT - Exit the program
+>
+```
+
+**SET && GET Examples (including MSET & MGET):**
+
+```bash
+> SET hello world!
+OK
+> GET hello world!
+world!
+> MSET hi bro whats good
+OK
+> MGET hi whats
+bro
+good
+>
+```
 
 ## Features
 
