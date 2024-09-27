@@ -1,4 +1,5 @@
 import { type HomeLayoutProps } from 'fumadocs-ui/home-layout';
+import Image from 'next/image';
 
 /**
  * Shared layout configurations
@@ -10,7 +11,20 @@ import { type HomeLayoutProps } from 'fumadocs-ui/home-layout';
 export const baseOptions: HomeLayoutProps = {
   githubUrl: "https://github.com/TheStarloTeam/lunardb",
   nav: {
-    title: "Lunar DB docs",
+    title: (
+      <>
+        <Image
+          alt="Lunar db"
+          src={"/lunaricon.svg"}
+          sizes="100px"
+          width={5}
+          height={0}
+          className=" w-10"
+          aria-label="Lunar db"
+        />
+        <h1>Lunar db docs</h1>
+      </>
+    ),
   },
   links: [
     {

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "LunarDB",
   description: "Documentation & Blog for LunarDB",
   icons: {
-    icon: "/public/favicon.ico",
+    icon: "/lunaricon.svg",
     // apple: "/apple-icon.png",
   },
 };
