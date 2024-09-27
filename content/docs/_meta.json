@@ -1,0 +1,22 @@
+{
+  "categories": [
+    {
+      "title": "Introduction",
+      "pages": [
+        "index",
+        "commands",
+        "contributors",
+        "communities",
+        "installation"
+      ]
+    },
+    {
+      "title": "API Documentation",
+      "pages": ["api-overview", "endpoints", "parameters"]
+    },
+    {
+      "title": "Security",
+      "pages": ["authentication", "encryption", "best-practices"]
+    }
+  ]
+}
