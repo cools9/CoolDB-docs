@@ -14,7 +14,7 @@ export const baseOptions: HomeLayoutProps = {
     title: (
       <>
         <Image
-          alt="Lunar db"
+          alt="lunardb"
           src={"/lunaricon.svg"}
           sizes="100px"
           width={5}
@@ -22,7 +22,7 @@ export const baseOptions: HomeLayoutProps = {
           className=" w-10"
           aria-label="Lunar db"
         />
-        <h1>Lunar db docs</h1>
+        <h1>LunarDB Docs</h1>
       </>
     ),
   },
