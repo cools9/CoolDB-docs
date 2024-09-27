@@ -17,9 +17,9 @@ export const baseOptions: HomeLayoutProps = {
           alt="lunardb"
           src={"/lunaricon.svg"}
           sizes="100px"
-          width={5}
-          height={0}
-          className=" w-10"
+          width={40}
+          height={40}
+          className="w-10 h-10 rounded-full overflow-hidden"
           aria-label="Lunar db"
         />
         <h1>LunarDB Docs</h1>
