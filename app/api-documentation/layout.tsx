@@ -1,7 +1,7 @@
 import { DocsLayout } from "fumadocs-ui/layout";
 import type { ReactNode } from "react";
 import { baseOptions } from "../layout.config";
-import { source } from "@/app/source";
+import { source } from "./source";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
