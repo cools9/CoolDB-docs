@@ -1,4 +1,4 @@
-import { source } from "./source";
+import { source } from "../source";
 import type { Metadata } from "next";
 import {
   DocsPage,
