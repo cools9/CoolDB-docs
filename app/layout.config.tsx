@@ -32,5 +32,15 @@ export const baseOptions: HomeLayoutProps = {
       url: "/docs",
       active: "nested-url",
     },
+    {
+      text: "API Documentation",
+      url: "/api-documentation",
+      active: "nested-url",
+    },
+    {
+      text: "Security",
+      url: "/security",
+      active: "nested-url",
+    },
   ],
 };

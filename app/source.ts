@@ -1,23 +1,8 @@
-import { docs, meta } from "@/.source";
-import { createMDXSource } from "fumadocs-mdx";
-import { loader } from "fumadocs-core/source";
-
-const updatedMeta = [
-  {
-    title: "Introduction",
-    pages: ["index", "commands", "contributors", "communities", "installation"],
-  },
-  {
-    title: "API Documentation",
-    pages: ["api-overview", "endpoints", "parameters"],
-  },
-  {
-    title: "Security",
-    pages: ["authentication", "encryption", "best-practices"],
-  },
-];
+import { docs, meta } from '@/.source';
+import { createMDXSource } from 'fumadocs-mdx';
+import { loader } from 'fumadocs-core/source';
 
 export const source = loader({
-  baseUrl: "/docs",
-  source: createMDXSource(docs, updatedMeta),
+  baseUrl: '/docs',
+  source: createMDXSource(docs, meta),
 });

@@ -1,4 +1,4 @@
-import { source } from '@/app/source';
+import { docsLoader  } from '@/app/source';
 import type { Metadata } from 'next';
 import {
   DocsPage,
@@ -14,7 +14,7 @@ export default async function Page({
 }: {
   params: { slug?: string[] };
 }) {
-  const page = source.getPage(params.slug);
+  const page = docsLoader.getPage(params.slug);
   if (!page) notFound();
 
   const MDX = page.data.body;
@@ -31,15 +31,15 @@ export default async function Page({
 }
 
 export async function generateStaticParams() {
-  return source.generateParams();
+  return docsLoader .generateParams();
 }
 
-export function generateMetadata({ params }: { params: { slug?: string[] } }): Metadata {
-  const page = source.getPage(params.slug);
+export function generateMetadata({ params }: { params: { slug?: string[] } }) {
+  const page = docsLoader .getPage(params.slug);
   if (!page) notFound();
 
   return {
     title: page.data.title,
     description: page.data.description,
-  };
+  } satisfies Metadata;
 }
