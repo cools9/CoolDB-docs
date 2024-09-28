@@ -34,12 +34,12 @@ export async function generateStaticParams() {
   return source.generateParams();
 }
 
-export function generateMetadata({ params }: { params: { slug?: string[] } }) {
+export function generateMetadata({ params }: { params: { slug?: string[] } }): Metadata {
   const page = source.getPage(params.slug);
   if (!page) notFound();
 
   return {
     title: page.data.title,
     description: page.data.description,
-  } satisfies Metadata;
+  };
 }
