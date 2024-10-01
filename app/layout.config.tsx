@@ -9,7 +9,7 @@ import Image from 'next/image';
  * Docs Layout: app/docs/layout.tsx
  */
 export const baseOptions: HomeLayoutProps = {
-  githubUrl: "https://github.com/TheStarloTeam/lunardb",
+  githubUrl: "https://github.com/Kazooki123/LunarDB",
   nav: {
     title: (
       <>
