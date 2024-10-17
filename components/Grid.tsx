@@ -1,15 +1,12 @@
+import { Card } from "./Card"
+
 export function Grid() {
     return (
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-4">
-            <div className="bg-gray-200 p-2">Item 1</div>
-            <div className="bg-gray-200 p-2">Item 2</div>
-            <div className="bg-gray-200 p-2">Item 3</div>
-            <div className="bg-gray-200 p-2">Item 4</div>
-            <div className="bg-gray-200 p-2">Item 5</div>
-            <div className="bg-gray-200 p-2">Item 6</div>
-            <div className="bg-gray-200 p-2">Item 7</div>
-            <div className="bg-gray-200 p-2">Item 8</div>
-            <div className="bg-gray-200 p-2">Item 9</div>
+            {Array.from({ length: 6 }).map((_, index) => (
+                <Card title="Sample box" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci quis metus ultricies, vitae finibus urna pellentesque. Sed commodo, tortor sed pharetra bibendum, turpis purus gravida orci, nec aliquet mi ligula eu purus. In at elit ex. Quisque ultricies pulvinar purus, at luctus justo lacinia vel. Vestibulum pulvinar lacus eu turpis rutrum, et fermentum sapien rhoncus. Nullam dapibus felis in neque ultricies ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Donec efficitur dolor a bibendum vehicula. Curabitur vitae est elit. Integer tempus massa elit, eget euismod nunc pharetra eget. Morbi efficitur metus in viverra finibus. Aliquam sollicitudin pharetra sapien nec bibendum. Etiam congue faucibus malesuada. Nunc vulputate congue vulputate."/>
+            ))}
+            
         </div>
     )
 }
