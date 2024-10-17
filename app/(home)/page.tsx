@@ -1,5 +1,10 @@
-import { redirect } from "next/navigation";
+import { Hero } from "@/components/Hero";
 
 export default function HomePage() {
-  redirect("/docs")
+  return(
+    <main className="h-screen">
+      <Hero/>
+    </main>
+  )
+
 }
