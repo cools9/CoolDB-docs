@@ -3,10 +3,12 @@ import { Card } from "./Card"
 export function Grid() {
     return (
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-4">
-            {Array.from({ length: 6 }).map((_, index) => (
-                <Card title="Sample box" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci quis metus ultricies, vitae finibus urna pellentesque. Sed commodo, tortor sed pharetra bibendum, turpis purus gravida orci, nec aliquet mi ligula eu purus. In at elit ex. Quisque ultricies pulvinar purus, at luctus justo lacinia vel. Vestibulum pulvinar lacus eu turpis rutrum, et fermentum sapien rhoncus. Nullam dapibus felis in neque ultricies ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Donec efficitur dolor a bibendum vehicula. Curabitur vitae est elit. Integer tempus massa elit, eget euismod nunc pharetra eget. Morbi efficitur metus in viverra finibus. Aliquam sollicitudin pharetra sapien nec bibendum. Etiam congue faucibus malesuada. Nunc vulputate congue vulputate."/>
-            ))}
-            
+            <Card title="🚀Blazingly Fast!" description="LunarDB uses your Random Access Memory (a.k.a RAM) to store keys and values on a blazingly fast response into sub-millinseconds!"/>
+            <Card title="📦Packages" description="LunarDB for now has a Python package but can be extended into other Programming language later on."/>
+            <Card title="🫂Community" description="LunarDB is very new, so we need your help and support for the growth and extensibility of LunarDB!"/>
+            <Card title="💾C++ Written" description="LunarDB is written in C++ and Ruby, which is why it's very fast when executed."/>
+            <Card title="⚙️Multimodal" description="LunarDB is a multimodal database, meaning it can be NoSQL & SQL, Schemafull and Schemaless!"/>
+            <Card title="💝Support" description="Yes! You as a user or even a developer can support LunarDB!"/>
         </div>
     )
 }
