@@ -1,5 +1,14 @@
-import { redirect } from "next/navigation";
+import { Hero } from "@/components/Hero";
+import { Grid } from "@/components/Grid";
+import { Footer } from "@/components/Footer";
 
 export default function HomePage() {
-  redirect("/docs")
+  return(
+    <main className="h-screen">
+      <Hero/>
+      <Grid/>
+      <Footer/>
+    </main>
+  )
+
 }
