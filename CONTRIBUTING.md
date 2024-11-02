@@ -1,15 +1,15 @@
-# Contributing to LunarDB Docs
+# Contributing to CoolDB Docs
 
-Thank you for considering contributing to LunarDB Docs! We welcome contributions of all kinds, including new features, bug fixes, documentation improvements, and more. This document provides guidelines and instructions to help you contribute effectively.
+Thank you for considering contributing to CoolDB Docs! We welcome contributions of all kinds, including new features, bug fixes, documentation improvements, and more. This document provides guidelines and instructions to help you contribute effectively.
 
 ## Getting Started
 
-1. **Fork the Repository**: Fork the LunarDB Docs repository on GitHub to your own account.
+1. **Fork the Repository**: Fork the CoolDB Docs repository on GitHub to your own account.
 
 2. **Clone the Repository**: Clone the forked repository to your local machine.
 
 ```sh
-git clone https://github.com/Kazooki123/lunardb-docs.git
+git clone https://github.com/Cools9/CoolDB-docs.git
 ```
 
 3.**Create a Branch**: Create a new branch for your work.
@@ -45,7 +45,7 @@ npm install .
 
 ## Submitting a Pull Request
 
-1. **Open a Pull Request**: Go to the original LunarDB Docs repository and open a pull request from your forked repository.
+1. **Open a Pull Request**: Go to the original CoolDB Docs repository and open a pull request from your forked repository.
 
 2. **Describe Your Changes**: Provide a detailed description of your changes in the pull request. Mention any issues or bugs your changes address.
 
@@ -58,14 +58,14 @@ npm install .
 - **Stay Updated**: Keep your forked repository up-to-date with the latest changes from the main repository.
 
   ```sh
-  git remote add upstream https://github.com/Kazooki123/lunardb-docs.git
+  git remote add upstream https://github.com/cools9/CoolDB-docs.git
   git fetch upstream
   git merge upstream/main
   ```
 
 ## Resources
 
-- **Documentation**: Refer to the project's documentation for more information on how to use and contribute to LunarDB Docs.
+- **Documentation**: Refer to the project's documentation for more information on how to use and contribute to CoolDB Docs.
 
 ## Code of Conduct
 

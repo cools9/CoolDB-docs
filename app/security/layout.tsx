@@ -5,8 +5,8 @@ import { source } from "./source";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LunarDB",
-  description: "Documentation & Blog for LunarDB",
+  title: "CoolDB",
+  description: "Documentation & Blog for CoolDB",
   icons: {
     icon: "/lunaricon.svg",
     // apple: "/apple-icon.png",
