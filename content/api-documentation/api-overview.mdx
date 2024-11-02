@@ -1,27 +1,26 @@
 ---
 title: API | Overview
-description: An overview for the API support for LunarDB
+description: An overview for the API support for CoolDB
 ---
 
 ## API Overview
 
-Welcome to the **LunarDB API** documentation! The LunarDB API is designed to provide developers with a simple and efficient way to interact with the LunarDB in-memory key-value store. Written in Go, it offers high-performance operations, allowing you to easily integrate LunarDB into your applications.
+Welcome to the **CoolDB API** documentation! The CoolDB API is designed to provide developers with a simple and efficient way to interact with the CoolDB in-memory key-value store. Written in Go, it offers high-performance operations, allowing you to easily integrate CoolDB into your applications.
 
-The API runs locally on a server, offering various endpoints to manage your data. This section provides an overview of the core API features, supported operations, and how to get started with using LunarDB via the API.
+The API runs locally on a server, offering various endpoints to manage your data. This section provides an overview of the core API features, supported operations, and how to get started with using CoolDB via the API.
 
 ### Key Features
-- **High Performance:** Interact with LunarDB's cache-based memory model through a fast, Go-powered API.
-- **Multi-Model Support:** Store and retrieve key-value pairs with various data models.
+- **High Performance:** Interact with CoolDB's cache-based memory model through a fast, Go-powered API.
 - **Lightweight and Scalable:** Ideal for quick caching or more complex data operations.
 - **Local Server:** The API runs locally, giving you full control over your data environment.
 
 ### API Authentication
 
-LunarDB's API currently does not require authentication for local setups, making it easy to get started. For production environments, consider adding custom authentication mechanisms.
+CoolDB's API currently does not require authentication for local setups, making it easy to get started. For production environments, consider adding custom authentication mechanisms.
 
 ### Error Handling
 
-LunarDB API follows a simple and consistent error-handling approach. The errors are returned in JSON format with an appropriate status code.
+CoolDB API follows a simple and consistent error-handling approach. The errors are returned in JSON format with an appropriate status code.
 
 - **404 Not Found:** If the key is not found.
   ```json
@@ -41,7 +40,7 @@ LunarDB API follows a simple and consistent error-handling approach. The errors 
 
 ### 1. **Using cURL**
 
-You can interact with the LunarDB API using simple `cURL` commands. Here’s an example of how to insert a key-value pair:
+You can interact with the CoolDB API using simple `cURL` commands. Here’s an example of how to insert a key-value pair:
 ```bash
 curl -X POST http://localhost:8080/data \
 -H "Content-Type: application/json" \
@@ -80,9 +79,9 @@ func main() {
 
 ### Next Steps
 
-Now that you understand the basics of the LunarDB API, you can dive deeper into specific use cases:
+Now that you understand the basics of the CoolDB API, you can dive deeper into specific use cases:
 - **Explore More Endpoints:** Check the full list of supported API endpoints.
-- **Get Started:** Set up LunarDB locally and start interacting with the API.
+- **Get Started:** Set up CoolDB locally and start interacting with the API.
 - **API Authentication (Future):** Plan for integrating authentication when moving to a production environment.
 
 Need more information? Visit our [API reference](/api-reference) for detailed information on each endpoint.
